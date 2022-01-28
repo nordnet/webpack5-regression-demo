@@ -1,9 +1,9 @@
-import { Hi } from './asf';
+import { hi } from './hi';
 
 function component() {
     const element = document.createElement('div');
   
-    element.innerHTML = Hi();
+    element.innerHTML = hi();
   
     return element;
   }

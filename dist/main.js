@@ -10,13 +10,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/asf.js":
-/*!********************!*\
-  !*** ./src/asf.js ***!
-  \********************/
+/***/ "./src/hi/hello.js":
+/*!*************************!*\
+  !*** ./src/hi/hello.js ***!
+  \*************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"Hi\": () => (/* binding */ asf)\n/* harmony export */ });\nconst asf = () => {\n    return 'hi';\n}\n\n\n\n//# sourceURL=webpack://webpack5-regression-demo/./src/asf.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"hello\": () => (/* binding */ hello)\n/* harmony export */ });\nconst hello = () => {\n    return 'hi';\n}\n\n//# sourceURL=webpack://webpack5-regression-demo/./src/hi/hello.js?");
+
+/***/ }),
+
+/***/ "./src/hi/index.js":
+/*!*************************!*\
+  !*** ./src/hi/index.js ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"hi\": () => (/* reexport safe */ _hello__WEBPACK_IMPORTED_MODULE_0__.hello)\n/* harmony export */ });\n/* harmony import */ var _hello__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./hello */ \"./src/hi/hello.js\");\n\n\n\n//# sourceURL=webpack://webpack5-regression-demo/./src/hi/index.js?");
 
 /***/ }),
 
@@ -26,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _asf__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./asf */ \"./src/asf.js\");\n\n\nfunction component() {\n    const element = document.createElement('div');\n  \n    element.innerHTML = (0,_asf__WEBPACK_IMPORTED_MODULE_0__.Hi)();\n  \n    return element;\n  }\n  \n  document.body.appendChild(component());\n\n//# sourceURL=webpack://webpack5-regression-demo/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hi__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./hi */ \"./src/hi/index.js\");\n\n\nfunction component() {\n    const element = document.createElement('div');\n  \n    element.innerHTML = (0,_hi__WEBPACK_IMPORTED_MODULE_0__.hi)();\n  \n    return element;\n  }\n  \n  document.body.appendChild(component());\n\n//# sourceURL=webpack://webpack5-regression-demo/./src/index.js?");
 
 /***/ })
 
